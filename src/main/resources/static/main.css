@@ -1,0 +1,121 @@
+
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      position: relative;
+    }
+
+    .image-banner {
+      position: top-fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      right: 50px
+      z-index: 1;
+    }
+
+    .image-banner img {
+      max-width: 100%;
+      height: 100px;
+      width: 650px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 350px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #A9A9A9;
+      height: 100%;
+      position: sticky;
+      margin: 20px;
+    }
+
+    /* Set black background color, white text and some padding */
+    #my-footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+      top: 0;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+
+    .tile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+      border: 3px solid #ccc;
+      margin-bottom: 30px;
+      height: 170px;
+      background-color: #FFFFFF;
+      color: black;
+    }
+
+    .tile-title {
+      font-size: 13px;
+    }
+
+    .bg-image {
+      background-image: url('scity-hall.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #content-div {
+      background-color:#FFFFFF;
+    }
+
+    #result-content {
+      background-color: #666;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color:white;
+      font-size:14px;
+    }
+
+    #search-input {
+      width:220px;
+      height:30px;
+      margin:20px;
+      transform: translateY(50%);
+    }
+
+    #search-input1 {
+      width:220px;
+      height:30px;
+      margin:20px;
+      transform: translateY(50%);
+    }
+
+    #search-input2 {
+      width:220px;
+      height:30px;
+      margin:20px;
+      transform: translateY(50%);
+    }
+
+    .scroll-nav{
+      position: sticky;
+    }
