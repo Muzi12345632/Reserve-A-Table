@@ -7,6 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 import java.util.List;
+import java.util.Map;
 
 @Document(collection = "restaurants")
 
@@ -36,6 +37,11 @@ public class Resturant {
         this.name = name;
         this.restaurant_id = restaurant_id;
     }
+
+    public Resturant(Document document){
+        
+    }
+
 
     public Address getAddress() {
         return address;

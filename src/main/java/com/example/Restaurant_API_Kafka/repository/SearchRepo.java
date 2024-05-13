@@ -9,4 +9,6 @@ public interface SearchRepo {
 
     Long getall();
 
+    Resturant getResult(String text);
+
 }

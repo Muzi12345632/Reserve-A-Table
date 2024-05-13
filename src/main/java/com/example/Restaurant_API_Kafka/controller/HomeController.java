@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @Controller
 
-//@CrossOrigin
+@CrossOrigin
 public class HomeController {
 
     @Autowired
@@ -44,6 +44,12 @@ public class HomeController {
         List<Resturant> results = searchRepo.findByText(text);
 
         return ResponseEntity.ok(results);
+    }
+
+    @GetMapping("api/v1/restaurants/search/{text}")
+    public ResponseEntity<Resturant> getResults(@PathVariable String text){
+        Resturant result = searchRepo.getResult(text);
+        return ResponseEntity.ok(result);
     }
 
 
